@@ -1,0 +1,38 @@
+# Database files
+backend/sales.db
+backend/*.db
+
+# Large CSV data files - keep sample for deployment
+backend/src/data/data.csv
+
+# Keep sample data for Render
+!backend/src/data/data-sample.csv
+
+# Dependencies
+**/node_modules/
+
+# Don't ignore package-lock.json - needed for Render deployment
+# **/package-lock.json
+**/yarn.lock
+
+# Environment variables
+**/.env
+**/.env.local
+
+# Keep production env templates
+!backend/.env.production
+!frontend/.env.production
+
+# Build outputs
+**/dist/
+**/build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
